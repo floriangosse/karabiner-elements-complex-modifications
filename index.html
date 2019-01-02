@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <title>Rules</title>
+    </head>
+
+    <body>
+        <h1>Rules</h1>
+
+        <script>
+            const importButtons = Array.from(document.querySelectorAll('button[data-file]'));
+            importButtons.forEach((importButton) => {
+                importButton.addEventListener('click', () => {
+                    const file = importButton.getAttribute('data-file');
+                    const url = new URL(window.location);
+                    url.pathname = file;
+
+                    const importUrl = `karabiner://karabiner/assets/complex_modifications/import?url=${url.toString()}`;
+                    window.location.href = importUrl;
+                });
+            });
+        </script>
+    </body>
+</html>
