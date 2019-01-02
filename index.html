@@ -6,6 +6,11 @@
     <body>
         <h1>Rules</h1>
 
+        <h2>Mouse Buttons</h2>
+
+        <button type="button" data-file="/rules/mouse-buttons.json">import</button>
+        <p>Maps button4 and button5 to back and forward</p>
+
         <script>
             const importButtons = Array.from(document.querySelectorAll('button[data-file]'));
             importButtons.forEach((importButton) => {
