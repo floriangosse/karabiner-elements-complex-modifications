@@ -1,1 +1,39 @@
-https://pqrs.org/osx/karabiner/complex_modifications/#mouse_button
+{
+    "title": "Change mouse button4/5 to browser back/forward",
+    "rules": [
+      {
+        "manipulators": [
+          {
+            "description": "Mouse back",
+            "from": {
+                "pointing_button": "button4"
+            },
+            "to": [
+                {
+                    "key_code": "left_arrow",
+                    "modifiers": ["left_command"]
+                }
+            ],
+            "type": "basic"
+          }
+        ]
+      },
+      {
+        "manipulators": [
+          {
+            "description": "Mouse forward",
+            "from": {
+                "pointing_button": "button5"
+            },
+            "to": [
+                {
+                    "key_code": "right_arrow",
+                    "modifiers": ["left_command"]
+                }
+            ],
+            "type": "basic"
+          }
+        ]
+      }
+    ]
+  }
